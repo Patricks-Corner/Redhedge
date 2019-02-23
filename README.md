@@ -1,4 +1,4 @@
-# Redhedge - 
+# Redhedge - [![Build status](https://ci.appveyor.com/api/projects/status/bo6hdpmhfp8647y5?svg=true)](https://ci.appveyor.com/project/sineflex/redhedge)
 
 ## FAQ
 1. Q: Is this any different than https://github.com/floprock/Exosphere ?
