@@ -8,6 +8,7 @@
      "dist": "electron-builder --publish=always",
     "start": "electron ."
   },
+  "repository": "https://github.com/Patricks-Corner/Redhedge",
   "author": "",
   "license": "ISC",
   "devDependencies": {
