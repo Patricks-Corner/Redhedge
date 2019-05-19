@@ -1,0 +1,178 @@
+	@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Exo:200i&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+  html{ height:100%; }
+body{ min-height:100%; padding:0; margin:0; position:relative; }
+.infobtn {
+	border: none;
+	background-color: darkgrey;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 150%;
+  background-color: darkgrey;
+    color: white;
+    text-align: left;
+}
+
+.txtbox {
+
+  width: 15%;
+  margin-bottom: 2px;
+  margin-right: 4px;
+}
+
+
+body {
+  background-color: rgb(60, 60, 60);
+ transition: background-color .5s;
+ position: relative;
+}
+
+
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.head {
+	margin: auto;
+    border: 3px solid #73AD21;
+
+    background: #73AD21;
+    padding: 10px;
+    text-align: center;
+}
+
+.nigward {
+
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.squigga {
+
+  font-size: 30px;
+  font-family: 'Ubuntu', bold italic;
+}
+
+#mvTriviaNShit {
+
+  font-family: 'Exo', sans-serif;
+}
+
+.yEEt {
+
+
+    
+}
+
+.txtbox {
+  width: 80%;
+  margin-bottom: 2px;
+  margin-right: 4px;
+}
+
+.pointy {
+	cursor: pointer;
+}
+
+
+
+#title-bar {
+  -webkit-app-region: drag;
+  height: 32px; 
+  padding: 2px;
+    margin: 0px;  
+  color: #ADADAD;
+font-family: "Segoe UI", sans-serif;
+}
+
+#title {
+  position: fixed;
+  top: 0px;
+  left: 12px; 
+  font-size: 16px;
+}
+
+#title-bar-btns {
+  -webkit-app-region: no-drag;
+  position: fixed;
+  top: 1px;
+  right: 0px; 
+
+}
+
+#title-bar-btns button {
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  color: #F1F1F1;
+  font-size: 16px;
+
+}
+
+#title-bar-btns button:hover {
+  background-color: royalblue;
+}
+#title-bar-btns #close-btn:hover {
+  background-color: #E81123;
+}
+
+#content {
+  padding: 12px;  
+  color: #CCCCCC;
+}
+
+a {
+  color: #68217A;
+}
+
+.btn_get {
+  background-color: #73AD21;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+   border-radius: 15px;
+}
+
+
+/* Darker background on mouse-over */
+.btn_get:hover {
+  background-color: rgb(86, 135, 18);
+}
+
+.input_get {
+  border-radius: 25px;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
