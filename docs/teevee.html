@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/howdy.css">
+        <script src="./js/exo.js"></script>
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/gashead.js"></script>
+        <script type="text/javascript" src="./js/yeeted_bullshit.js"></script>
+        <script type="text/javascript" src="./js/notesLaPatch.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/prettify/prettify.css">
+        <link rel="stylesheet" href="css/jquery.scrollbar.css">
+        <script type="text/javascript" src="js/prettify/prettify.js"></script>
+        <script type="text/javascript" src="js/jquery.scrollbar.js"></script>
+        <script type="text/javascript">jQuery(document).ready(function($){window.prettyPrint && prettyPrint();$('.wrapper').scrollbar();});</script>
+        <link rel="stylesheet" type="text/css" href="./css/exo.css">
+
+   <div id="title-bar">
+      <div id="title">IcyViewR 2.5.0 <!--<center><div id="infobox" class="alert alert-info"><strong id="first"></strong><strong><p id="header"></p></strong><p id="description"></p></div></center>--> </div>
+      
+      <div id="title-bar-btns">
+        <input class="srchbx" id="postersearch" type="text" placeholder="Search..." /> <button class="dick fa fa-search" onclick="getposters()">
+        <button id="min-btn"><b>-</b></button>
+        <button id="max-btn"><b>+</b></button>
+        <button id="close-btn"><b>x</b></button>
+      </div>
+    </div>
+
+
+  <title>TV Show Title Parser POC</title>
+
+  <style type="text/css">
+    
+  
+  </style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<img alt="GitHub license" src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png">
+</center>
+ <div id="wrapper"></div>
+
+<div id="myModal" class="modal" >
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="head">
+      <span class="close">&times;</span>
+      <h2 id="mvName" class="squigga"></h2>
+    </div>
+    <div class="yEEt">
+    	<p id="mvStreamLink"></p>
+      <p id="mvDesc" class="nigward"></p>
+    </div>
+    <div class="head">
+      <h3 id="mvTriviaNShit"></h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div id="patch" class="modal" >
+
+  <!-- Modal content -->
+  <div class="muuh">
+    <div class="head2">
+
+      <h2 id="notneeded" class="squigga">Patch Notes</h2>
+    </div>
+    <div class="yEEt">
+                <p class="squigga2">New in v.2.5</p>
+      <ul class="niggward">
+          <li>Added a TV-series mode</li>
+                <ul>
+                    <li>This is accessible through a button in the footer (the bar at the bottom)</li>
+                </ul>
+           <li>Changed API Provider to videospider.in due to an excessive downtime of odb.to</li>
+                <ul>
+                    <li>Sadly this site has a fuckton of ads and other popup shit, ill change it if odb.to goes back online</li>
+                </ul>
+           <li>Removed older Patch Notes</li>
+                <ul>
+                    <li>From now on, only the two most recent Patches will be displayed</li>
+                </ul>
+      </ul>
+
+    <p class="squigga2">New in v.2.4</p>
+      <ul class="niggward">
+          <li>completely overhauled UI</li>
+           <li>minor optimizations</li>
+
+      </ul>
+    </div>
+    <div class="head2">
+      <h3 id="License">
+<img alt="GitHub license" src="https://img.shields.io/badge/License-Open_Source_with_restrictions-blue.svg?style=for-the-badge">
+      </h3>
+    </div>
+  </div>
+
+</div>
+
+<div id="license" class="modal" >
+
+  <!-- Modal content -->
+  <div class="muuh">
+    <div class="yEEt">
+      <p class="niggward">
+        IcyViewR
+Copyright (C) 2019 duckforceone.
+<br>
+<br>
+IcyViewR (hereinafter referred to as "the Software") is free for use in any environment, including but not necessarily limited to: personal, academic, commercial, government, business, non-profit, and for-profit. "Free" in the preceding sentence means that there is no cost or charge associated with the installation and use of the Software.
+<br>
+<br>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software, to use the Software without restriction, including making copies for their own personal use, however the author restricts distribution of the Software to it's original location, meaning these copies may not be made publically available (including on websites, publications, and other forms of public directories). Since public redistribution is not allowed, this means that the Software may only be acquired by visiting the original location it was published to by the author.
+<br>
+<br>
+You may not modify, adapt, rent, lease, loan or sell the Software or any part thereof. Nor may you create derivative works based upon the Software or any part thereof.
+<br>
+<br>
+The above copyright notice and this permission notice shall be included in all copies of the Software.
+      </p>
+    </div>
+    <div class="head2">
+      <h3 id="PermissionNotice">
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+      </h3>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
+<!--
+<script type="text/javascript">
+  $(document).ready( function() {
+  var alert = "https://status.squidly.gq/api/incidents.php";
+    $.getJSON(alert, function(data) {
+      var titty;
+      var desc;
+      var state;
+      var servercall;
+      var title;
+      desc = (data.incidents[0].text);
+      state = (data.incidents[0].type);
+      title = (data.incidents[0].title);
+      nem = (data.incidents[0].username);
+
+
+     if ( state == 0 && nem == "duckforceone") {
+      $('#infobox').attr('class','alert alert-danger');
+      $('#header').html("&#9888; "+title);
+      $('#description').html(desc);
+       $('#infobox').attr('style','display: show;');
+        } 
+        else if (state == 1 && nem == "duckforceone") {
+          $('#infobox').attr('class','alert alert-warning');
+          $('#header').html("&#9888; "+title);
+          $('#description').html(desc);
+           $('#infobox').attr('style','display: show;');
+        }
+        else if ( state == 2 && nem == "duckforceone") {
+
+          $('#infobox').attr('class','alert alert-warning');
+          $('#header').html("&#9888; "+title);
+          $('#description').html(desc);
+           $('#infobox').attr('style','display: show;');
+        }
+        else {
+           $('#infobox').attr('style','display: none;');
+          $('#header').html("&#10004; "+title);
+        }
+
+            
+            
+    });
+  });
+    setInterval( function() {
+      var alert = "https://status.squidly.gq/api/incidents.php";
+    $.getJSON(alert, function(data) {
+      var titty;
+      var desc;
+      var state;
+      var servercall;
+      var title;
+      desc = (data.incidents[0].text);
+      state = (data.incidents[0].type);
+      title = (data.incidents[0].title);
+      nem = (data.incidents[0].username);
+
+
+     if ( state == 0 && nem == "duckforceone") {
+      $('#infobox').attr('class','alert alert-danger');
+      $('#header').html("&#9888; "+title);
+      $('#description').html(desc);
+       $('#infobox').attr('style','display: show;');
+        } 
+        else if (state == 1 && nem == "duckforceone") {
+          $('#infobox').attr('class','alert alert-warning');
+          $('#header').html("&#9888; "+title);
+          $('#description').html(desc);
+           $('#infobox').attr('style','display: show;');
+        }
+        else if ( state == 2 && nem == "duckforceone") {
+          $('#infobox').attr('class','alert alert-warning');
+          $('#header').html("&#9888; "+title);
+          $('#description').html(desc);
+           $('#infobox').attr('style','display: show;');
+        }
+        else {
+           $('#infobox').attr('class','alert alert-success');
+          $('#header').html("&#10004; "+title);
+           $('#description').html(desc);
+           $('#infobox').attr('style','display: none;');
+        }
+
+            
+            
+    });
+  }, 20000);
+
+</script>
+-->
+</body>
+
+  <div class="downsides">
+ <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" id="patchbtn" class="infobtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "./app.html"'>Go to the movie page</button><button type="button" class="infobtn" id="serverstatus"></button>
+</div>
+
+</body>
+
+<script>
+  
+  require('./js/renderer.js');
+
+</script>
+
+   </html>
