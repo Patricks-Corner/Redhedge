@@ -43,7 +43,6 @@ body {
   background-color: rgb(60, 60, 60);
  transition: background-color .5s;
  position: relative;
- overflow: hidden;
 }
 
 
