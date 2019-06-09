@@ -25,6 +25,7 @@ visibility:visible;
       padding: 0px;
       margin:0px;f
       background-color: #22252a;
+     overflow: auto;
     }
 
 /* The Modal (background) */
