@@ -45,8 +45,6 @@ body {
  position: relative;
 }
 
-
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
@@ -60,7 +58,6 @@ body {
 .head {
 	margin: auto;
     border: 3px solid #73AD21;
-
     background: #73AD21;
     padding: 10px;
     text-align: center;
