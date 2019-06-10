@@ -327,7 +327,7 @@ var span = document.getElementsByClassName("close")[0];
   */
 $.getJSON("https://jsonip.com?callback=?", function (response) {
 var clientIP = response.ip;
-   alert("Your IP is: "+clientIP);
+   //alert("Your IP is: "+clientIP);
 var proxy = 'https://cors-anywhere.herokuapp.com/';
 $.get( proxy+"https://videospider.in/getticket.php?key=JhhbVDPq3GIdkhuE&secret_key=a10ro5sbabnvycg0dfn1dn1h7h26bn&video_id="+tmdbid+"&tmbd=1&ip="+clientIP+"", function( data ) {
 
