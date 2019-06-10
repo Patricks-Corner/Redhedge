@@ -118,7 +118,7 @@ function getlink(episode) {
               Argggggggh
 
   */
-$.getJSON("http://jsonip.com?callback=?", function (response) {
+$.getJSON("https://jsonip.com?callback=?", function (response) {
 var clientIP = response.ip;
    alert("Your IP is: "+clientIP);
 var proxy = 'https://cors-anywhere.herokuapp.com/';
